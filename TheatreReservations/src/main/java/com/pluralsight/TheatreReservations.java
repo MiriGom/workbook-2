@@ -13,18 +13,16 @@ public class TheatreReservations {
         int numberOfTickets;
 
         System.out.print("Please enter your first name and last name: ");
-        userName = scanner.nextLine();
+        userName = scanner.nextLine().trim();
 
         String[] fullName = userName.split(Pattern.quote(" "));
 
         System.out.print("What date will you be coming? (please enter format mm/dd/yyyy) ");
-        date = scanner.nextLine();
+        date = scanner.nextLine().trim();
 
         System.out.print("How many tickets would like? ");
         numberOfTickets = scanner.nextInt();
 
         System.out.println("\n" + numberOfTickets + " tickets reserved for " + date + " under " + fullName[1] + ", " + fullName[0]);
-
-
     }
 }
