@@ -57,13 +57,23 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", isbn='" + isbn + '\'' +
-                ", title='" + title + '\'' +
+        return "\"" + title + "\"" +
                 ", isCheckedOut=" + isCheckedOut +
                 ", checkedOutTo='" + checkedOutTo + '\'' +
                 '}';
+
+
+        /*
+        @Override
+        public String toString() {
+            return "Book{" +
+                    "id=" + id +
+                    ", isbn='" + isbn + '\'' +
+                    ", title='" + title + '\'' +
+                    ", isCheckedOut=" + isCheckedOut +
+                    ", checkedOutTo='" + checkedOutTo + '\'' +
+                    '}';
+                            */
     }
 }
 
