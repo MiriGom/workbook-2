@@ -7,7 +7,7 @@ public class CellPhone {
     private String phoneNumber;
     private String owner;
 
-    public void cellPhone() {
+    public CellPhone() {
         this.serialNumber = 0;
         this.model = "";
         this.carrier = "";
@@ -54,14 +54,7 @@ public class CellPhone {
     public void setOwner(String owner) {
         this.owner = owner;
     }
-
-    @Override
-    public String toString() {
-        return owner + "'s cellPhone details: \n " +
-                "serialNumber: " + serialNumber +
-                "\n model: " + model +
-                "\n carrier: " + carrier +
-                "\n phoneNumber: " + phoneNumber +
-                "\n owner: " + owner;
+    public void dial(String phoneNumber){
+        System.out.println(owner + "'s phone is calling " + phoneNumber);
     }
 }
